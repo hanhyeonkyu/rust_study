@@ -1,11 +1,9 @@
 // mod game;
-mod basic;
+// mod basic;
+mod ownership;
 
 fn main() {
-    basic::mutvsimmut();
-    basic::datatypes();
-    basic::functypes();
-    basic::controlflow();
+    ownership::scopes();
 }
 
 
