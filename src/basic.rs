@@ -1,5 +1,27 @@
 pub fn functypes() {
-    
+    func0();
+    func1(4);
+    func2();
+    let x = func3(3);
+    println!("arrow type func3 is {}", x);
+}
+fn func0() {
+    println!("no parameter func")
+}
+fn func1(x: i32) {
+    println!("parameter type func is {}", x)
+}
+fn func2() {
+    // when you declare inside you can change immut value
+    let y = {
+        let x = 3;
+        x + 1
+    };
+    println!("declare type func2 is {}", y)
+}
+fn func3(x: i32) -> i32 {
+    // write what you want to return
+    x + 7
 }
 
 pub fn datatypes() {
