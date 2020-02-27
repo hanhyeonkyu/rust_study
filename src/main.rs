@@ -1,7 +1,9 @@
-mod game;
+// mod game;
+mod basic;
 
 fn main() {
-    game::guess();
+    basic::variables();
+
 }
 
 
