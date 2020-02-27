@@ -5,6 +5,7 @@ fn main() {
     basic::mutvsimmut();
     basic::datatypes();
     basic::functypes();
+    basic::controlflow();
 }
 
 

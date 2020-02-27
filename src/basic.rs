@@ -1,3 +1,62 @@
+pub fn controlflow() {
+    iffunc(5);
+    ifletfunc(true);
+    loopfunc(10);
+    whilefunc();
+    forloop();
+    forloop2();
+}
+fn forloop2() {
+    for number in (1..4).rev() {
+        println!("forloop2 {}", number);
+    }
+    println!("forloop2 over");
+}
+fn forloop() {
+    let a = [10, 20, 30, 40, 50];
+    for element in a.iter() {
+        println!("forloop {}", element);
+    }
+    println!("forloop over");
+}
+fn whilefunc() {
+    let mut number = 3;
+    while number != 0 {
+        println!("whileloop{}", number);
+        number -= 1;
+    }
+    println!("whileloop over");
+}
+fn loopfunc(cnt: i32) {
+    let mut count = 0;
+    let result = loop {
+        count += 1;
+        if count == cnt {
+            break count * 2;
+        }
+    };
+    println!("{}", result);
+}
+fn ifletfunc(std: bool){
+    let iflet = if std {
+        5
+    } else {
+        6
+    };
+    println!("{}", iflet);
+}
+fn iffunc(x: i32) {
+    if x > 10 {
+        println!("upper ten");
+    } else if x == 5 {
+        println!("it is five");
+    } else if x < 5 {
+        println!("lower five");
+    } else {
+        println!("else");
+    }
+}
+
 pub fn functypes() {
     func0();
     func1(4);
