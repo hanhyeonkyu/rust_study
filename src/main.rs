@@ -2,8 +2,9 @@
 mod basic;
 
 fn main() {
-    basic::variables();
-
+    basic::mutvsimmut();
+    basic::datatypes();
+    basic::functypes();
 }
 
 
