@@ -1,9 +1,6 @@
-// mod game;
-// mod basic;
+#[path = "something/ownership.rs"]
 mod ownership;
 
 fn main() {
     ownership::scopes();
 }
-
-
